@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    background-image: url("leatherBG.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+.title {
+    font-size: 36px;
+    color: yellow;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+.lens-selector {
+    text-align: center;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /*margin-bottom: 100px;*/
+}
+
+/* Style disabled input elements */
+input[type="range"]:disabled {
+    opacity: 0.5; /* Reduce opacity for disabled elements */
+    pointer-events: none; /* Disable pointer events so users cannot interact with them */
+}
+
+.image-container {
+    margin: 10px;
+    /*background-color: black;*/
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("Camera Body.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjusted background size */
+    background-position: center;
+}
+
+.image-container img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.camera-settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.camera-settings div {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    margin: 1% 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+}
